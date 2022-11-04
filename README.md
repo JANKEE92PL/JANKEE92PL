@@ -7,9 +7,9 @@
 [![Github Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github&link=https://github.com/jankee92pl/)](https://github.com/jankee92pl/) 
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/sebastian-webdesign-sj/)](https://www.linkedin.com/in/sebastian-webdesign-sj)
 [![Behance Badge](https://img.shields.io/badge/-Behance-blue?style=flat-square&logo=behance&logoColor=white)](https://www.behance.net/sebastian-webdesign)
-[![Hackerrank Badge](https://img.shields.io/badge/-Hackerrank-2EC866?style=flat-square&logo=HackerRank&logoColor=white&link=https://www.hackerrank.com/jankee112)](https://www.hackerrank.com/jankee112)
-[![Stackoverflow Badge](https://img.shields.io/badge/-Stack%20overflow-FE7A16?style=flat-square&logo=stack-overflow&logoColor=white&link=https://stackoverflow.com/users/13904998/jankee92pl)](https://stackoverflow.com/users/13904998/jankee92pl)
-<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/JANKEE92PL?style=social">
+[![Twitter Badge](https://img.shields.io/badge/Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white)](https://twitter.com/JANKEE92PL)
+
+
 
 <br>
 
