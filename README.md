@@ -3,7 +3,6 @@
 
 <img src="https://user-images.githubusercontent.com/65852150/200073677-8facd1c6-662d-4be8-9934-decceb2e1920.gif" height="300px">
 
-
 [![Github Badge](https://img.shields.io/badge/Dashboard-FD3A5C?style=for-the-badge&logo=hotjar&logoColor=white)](https://github.com/jankee92pl/Gallery) 
 
 
