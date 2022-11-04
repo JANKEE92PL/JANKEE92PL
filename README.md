@@ -14,15 +14,18 @@
 
 ### ⚙️ Some Tool and Tech I use
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
 <code><img height="30" src="https://avatars1.githubusercontent.com/u/1517864?s=200&v=4"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
 <code><img height="30" src="https://user-images.githubusercontent.com/65852150/200025735-069369d7-fd22-4ae0-834e-d4bef5d73d20.png"></code>
 <code><img height="30" src="https://user-images.githubusercontent.com/65852150/200026211-230362cc-2e25-4eb4-acd1-d49d1fa7a28d.png"></code>
+<code><img height="30" src="https://user-images.githubusercontent.com/65852150/200027595-2f1ac745-0884-4cb1-b66e-4b0006b33fcb.png"></code>
 <code><img height="30" src="https://user-images.githubusercontent.com/65852150/200026403-ddbd3e9a-9b3e-42da-9e34-82d13a1b836d.png"></code>
 <code><img height="30" src="https://avatars1.githubusercontent.com/u/45120?s=200&v=4"></code>
 <code><img height="30" src="https://user-images.githubusercontent.com/65852150/200026796-27495a35-c978-471f-a304-2023b15f6157.png"></code>
 <code><img height="30" src="https://avatars1.githubusercontent.com/u/2918581?s=200&v=4"></code>
+<code><img height="30" src="https://user-images.githubusercontent.com/65852150/200027151-ec1894e5-e23c-4a20-9561-719b0df5d8cf.png"></code>
 <code><img height="30" src="https://avatars3.githubusercontent.com/u/18133?s=200&v=4"></code>
+
 
 
 
