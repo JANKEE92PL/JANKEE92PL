@@ -1,6 +1,7 @@
 <h1> <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" height="30px">Howdy!, I am <a href="https://github.com/jankee92pl">JANKEE92PL</a> <img height="30px" src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430"></h1>
 </h1>
-<hr>
+
+
 
 ### 📬 Find me at
 [![Github Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github&link=https://github.com/jankee92pl/)](https://github.com/jankee92pl/) 
@@ -9,7 +10,7 @@
 [![Stackoverflow Badge](https://img.shields.io/badge/-Stack%20overflow-FE7A16?style=flat-square&logo=stack-overflow&logoColor=white&link=https://stackoverflow.com/users/13904998/jankee92pl)](https://stackoverflow.com/users/13904998/jankee92pl)
 <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/JANKEE92PL?style=social">
 
-
+<br>
 
 ### 🖥️ My DevSetup
 <img src="https://img.shields.io/badge/Samsung-eee.svg?&style=flat-square&logo=samsung&logoColor=000"><img src="https://img.shields.io/badge/Razer-eee.svg?&style=flat-square&logo=razer&logoColor=1ED760"><img src="https://img.shields.io/badge/Linux-eee.svg?&style=flat-square&logo=ubuntu&logoColor=orange"><img src="https://img.shields.io/badge/Windows-eee.svg?&style=flat-square&logo=windows&logoColor=0078D6"><img src="https://img.shields.io/badge/Apple-eee.svg?&style=flat-square&logo=apple&logoColor=000"><img src="https://img.shields.io/badge/Chrome-eee.svg?&style=flat-square&logo=google-chrome&logoColor=yellow"><img src="https://img.shields.io/badge/jetbrains-eee?style=flat-square&logo=webstorm&logoColor=07C3F2"><img src="https://img.shields.io/badge/Terminal-eee.svg?&style=flat-square&logo=powershell&logoColor=000"><img src="https://img.shields.io/badge/Youtube-eee.svg?&style=flat-square&logo=youtube&logoColor=red"><img src="https://img.shields.io/badge/Slack-eee.svg?&style=flat-square&logo=slack&logoColor=purple"><img src="https://img.shields.io/badge/Atlassian-eee.svg?&style=flat-square&logo=atlassian&logoColor=0065FF"><img src="https://img.shields.io/badge/Zoom-eee.svg?&style=flat-square&logo=zoom&logoColor=0065FF">
