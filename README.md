@@ -25,6 +25,9 @@
 <code><img height="30" src="https://avatars1.githubusercontent.com/u/2918581?s=200&v=4"></code>
 <code><img height="30" src="https://user-images.githubusercontent.com/65852150/200027151-ec1894e5-e23c-4a20-9561-719b0df5d8cf.png"></code>
 <code><img height="30" src="https://avatars3.githubusercontent.com/u/18133?s=200&v=4"></code>
+<code><img height="30" src="https://user-images.githubusercontent.com/65852150/200028500-3f58d558-5461-4b78-9c04-9313c7ed4ec3.png"></code>
+<code><img height="30" src="https://user-images.githubusercontent.com/65852150/200029057-d0237f83-f66b-4b74-8e3d-59be790d00d8.png"></code>
+
 
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jankee92pl&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
