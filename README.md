@@ -10,24 +10,20 @@
 
 
 ### 🖥️ My DevSetup
-<img src="https://img.shields.io/badge/Linux-eee.svg?&style=flat-square&logo=linux&logoColor=000"> <img src="https://img.shields.io/badge/Windows-eee.svg?&style=flat-square&logo=windows&logoColor=0078D6"> <img src="https://img.shields.io/badge/apple-eee.svg?&style=flat-square&logo=apple&logoColor=000"> <img src="https://img.shields.io/badge/Chrome-eee.svg?&style=flat-square&logo=google-chrome&logoColor=F4B400"> <img src="https://img.shields.io/badge/jetbrains-eee?style=flat-square&logo=webstorm&logoColor=07C3F2"> <img src="https://img.shields.io/badge/Terminal-eee.svg?&style=flat-square&logo=powershell&logoColor=000"> <img src="https://img.shields.io/badge/Ruby-eee.svg?&style=flat-square&logo=ruby&logoColor=DB4437"> <img src="https://img.shields.io/badge/Spotify-eee.svg?&style=flat-square&logo=spotify&logoColor=1ED760"> <img src="https://img.shields.io/badge/razer-eee.svg?&style=flat-square&logo=razer&logoColor=1ED760"> 
+<img src="https://img.shields.io/badge/Linux-eee.svg?&style=flat-square&logo=linux&logoColor=000"> <img src="https://img.shields.io/badge/Windows-eee.svg?&style=flat-square&logo=windows&logoColor=0078D6"> <img src="https://img.shields.io/badge/apple-eee.svg?&style=flat-square&logo=apple&logoColor=000"> <img src="https://img.shields.io/badge/Chrome-eee.svg?&style=flat-square&logo=google-chrome&logoColor=F4B400"> <img src="https://img.shields.io/badge/jetbrains-eee?style=flat-square&logo=webstorm&logoColor=07C3F2"> <img src="https://img.shields.io/badge/Terminal-eee.svg?&style=flat-square&logo=powershell&logoColor=000"> <img src="https://img.shields.io/badge/samsung-eee.svg?&style=flat-square&logo=samsung&logoColor=000"> <img src="https://img.shields.io/badge/Spotify-eee.svg?&style=flat-square&logo=spotify&logoColor=1ED760"> <img src="https://img.shields.io/badge/razer-eee.svg?&style=flat-square&logo=razer&logoColor=1ED760"> 
 
 ### ⚙️ Some Tool and Tech I use
-<code><img height="30" src="https://avatars0.githubusercontent.com/u/1525981?s=200&v=4"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/cpp/cpp.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
-<code><img height="30" src="https://avatars3.githubusercontent.com/u/9950313?s=200&v=4"></code>
-  <code><img height="30" src="https://avatars1.githubusercontent.com/u/45120?s=200&v=4"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
 <code><img height="30" src="https://avatars1.githubusercontent.com/u/1517864?s=200&v=4"></code>
+<code><img height="30" src="https://avatars3.githubusercontent.com/u/9950313?s=200&v=4"></code>
+<code><img height="30" src="https://avatars1.githubusercontent.com/u/45120?s=200&v=4"></code>
 <code><img height="30" src="https://avatars1.githubusercontent.com/u/2918581?s=200&v=4"></code>
 <code><img height="30" src="https://avatars3.githubusercontent.com/u/18133?s=200&v=4"></code>
-<code><img height="30" src="https://avatars1.githubusercontent.com/u/5009934?s=200&v=4"></code>
-<code><img height="30" src="https://avatars0.githubusercontent.com/u/365630?s=88&v=4"></code>
-<code><img height="30" src="https://avatars.githubusercontent.com/u/15658638"></code>
-<code><img height="30" src="https://avatars.githubusercontent.com/u/34455048"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/raspberry-pi/raspberry-pi.png"></code>
-<code><img height="30" src="https://avatars2.githubusercontent.com/u/1728152?s=200&v=4"></code>  
+
+
+
+
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jankee92pl&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
