@@ -30,5 +30,5 @@
 <code><img height="30" src="https://avatars2.githubusercontent.com/u/1728152?s=200&v=4"></code>  
 
 views
-![Profile Views](https://komarev.com/ghpvc/?username=JANKEE92PL)
+![Profile Views](https://komarev.com/ghpvc/?username=JANKEE92PL&color=green)
 [![HitCount](http://hits.dwyl.com/Defcon27/.svg)](http://hits.dwyl.com/JANKEE92PL)
