@@ -31,4 +31,4 @@
 
 views
 ![Profile Views](https://komarev.com/ghpvc/?username=JANKEE92PL&color=green)
-[![HitCount](http://hits.dwyl.com/Defcon27/.svg)](http://hits.dwyl.com/JANKEE92PL)
+
