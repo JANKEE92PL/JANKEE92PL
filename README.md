@@ -1,5 +1,5 @@
 
-<h1> <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" height="10%">Howdy!, I am <a href="https://github.com/JANKEE92PL/Gallery">JANKEE92PL</a> <img height="30px" src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430">
+<h1> <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" height="10px">Howdy!, I am <a href="https://github.com/JANKEE92PL/Gallery">JANKEE92PL</a> <img height="30px" src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430">
 </h1>
 
 
