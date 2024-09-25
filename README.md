@@ -43,4 +43,4 @@
 
 
 
-<p color:'green'>Letztes Update: *Wed Sep 25 12:21:06 UTC 2024*</p>
+<p style="color:green;">Letztes Update: <em>Wed Sep 25 12:21:06 UTC 2024</em></p>
