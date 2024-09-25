@@ -1,9 +1,10 @@
 # .github/workflows/auto_commit.yml
 name: Daily Commit
 
+# Festlegen des Zeitplans für die tägliche Ausführung um 10:45 MEZ (9:45 UTC)
 on:
   schedule:
-    - cron: "15 10  * * *"
+    - cron: "21 10 * * *"  # Läuft täglich um 9:45 UTC
 
 jobs:
   commit:
@@ -14,10 +15,20 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    # 2. Ändere die README.md-Datei (Datum aktualisieren)
-    - name: Update README file
+    # 2. Ändere die README.md-Datei (aktualisiere die letzte Zeile)
+    - name: Update last line of README file
       run: |
-        echo "Letztes Update: $(date)" > README.md  # Überschreibt den Inhalt der Datei
+        # Speichere den aktuellen Inhalt der README.md in einer temporären Datei
+        temp_file=$(mktemp)
+        
+        # Entferne die letzte Zeile aus der README.md und speichere den Rest in der temporären Datei
+        head -n -1 README.md > "$temp_file"
+        
+        # Füge die aktualisierte Zeile hinzu
+        echo "Letztes Update: $(date)" >> "$temp_file"
+        
+        # Ersetze die README.md mit dem neuen Inhalt
+        mv "$temp_file" README.md
 
     # 3. Änderungen committen und pushen
     - name: Commit and push changes
