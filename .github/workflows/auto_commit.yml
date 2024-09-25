@@ -11,7 +11,7 @@ on:
     - cron: "40 12 * * *"
     - cron: "05 14 * * *"
     - cron: "20 15 * * *"
-    - cron: "35 16 * * *"
+    - cron: "07 16 * * *"
     - cron: "00 18 * * *"
     - cron: "25 20 * * *"
 
@@ -33,20 +33,43 @@ jobs:
           exit 0
         fi
 
-    # 3. Ändere die README.md-Datei (aktualisiere die letzte Zeile auf MEZ-Zeit)
+    # 3. Ändere die README.md-Datei (aktualisiere die letzte Zeile mit der Zeitdifferenz)
     - name: Update last line of README file
       run: |
         # Setze die Zeitzone auf MEZ (Europe/Berlin)
         export TZ="Europe/Berlin"
+
+        # Hole das Datum des letzten Commits
+        last_commit_time=$(git log -1 --format=%cd --date=unix)
         
+        # Aktuelle Zeit in Unix-Timestamp
+        current_time=$(date +%s)
+        
+        # Berechne die Zeitdifferenz in Sekunden
+        time_diff=$((current_time - last_commit_time))
+        
+        # Berechne die Zeitdifferenz in Minuten, Stunden und Tagen
+        minutes=$((time_diff / 60))
+        hours=$((minutes / 60))
+        days=$((hours / 24))
+
+        # Bereite die Zeitdifferenz für die Ausgabe vor
+        if [ $days -gt 0 ]; then
+          time_ago="$days Tagen"
+        elif [ $hours -gt 0 ]; then
+          time_ago="$hours Stunden"
+        else
+          time_ago="$minutes Minuten"
+        fi
+
         # Speichere den aktuellen Inhalt der README.md in einer temporären Datei
         temp_file=$(mktemp)
         
         # Entferne die letzte Zeile aus der README.md und speichere den Rest in der temporären Datei
         head -n -1 README.md > "$temp_file"
         
-        # Füge die aktualisierte Zeile mit dem MEZ-Datum hinzu
-        echo "###### Letztes Update: $(date)" >> "$temp_file"
+        # Füge die aktualisierte Zeile mit der Zeitdifferenz hinzu
+        echo "###### Letztes Update vor $time_ago" >> "$temp_file"
         
         # Ersetze die README.md mit dem neuen Inhalt
         mv "$temp_file" README.md
