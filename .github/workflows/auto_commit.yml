@@ -14,10 +14,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    # 2. Ändere die README.md-Datei (Datum hinzufügen)
+    # 2. Ändere die README.md-Datei (Datum aktualisieren)
     - name: Update README file
       run: |
-        echo "Letztes Update: $(date)" >> README.md
+        echo "Letztes Update: $(date)" > README.md  # Überschreibt den Inhalt der Datei
 
     # 3. Änderungen committen und pushen
     - name: Commit and push changes
