@@ -3,7 +3,7 @@ name: Daily Commit
 
 on:
   schedule:
-    - cron: "53 08 * * *"
+    - cron: "*/5 * * * *"  # Alle 5 Minuten
 
 jobs:
   commit:
