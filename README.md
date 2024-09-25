@@ -40,7 +40,4 @@
 <code><img height="30" src="https://user-images.githubusercontent.com/65852150/200029057-d0237f83-f66b-4b74-8e3d-59be790d00d8.png"></code>
 <code><img height="30" src="https://github.com/JANKEE92PL/JANKEE92PL/assets/65852150/5d0f7404-c50c-40e4-b3ef-b5fa8756ff2d"></code>
 
-
-
-
-<p style="color:green;">Letztes Update: <em>Wed Sep 25 12:21:06 UTC 2024</em></p>
+<span style="color: green;">Letztes Update: <em>Wed Sep 25 12:21:06 UTC 2024</em></span>
