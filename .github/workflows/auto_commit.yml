@@ -3,17 +3,17 @@ name: Random Daily Commit
 
 on:
   schedule:
-    # Läuft 10-mal am Tag zu verschiedenen Zeiten (UTC)
-    - cron: "10 6 * * *"   # 06:10 UTC
-    - cron: "30 7 * * *"   # 07:30 UTC
-    - cron: "50 8 * * *"   # 08:50 UTC
-    - cron: "15 10 * * *"  # 10:15 UTC
-    - cron: "40 11 * * *"  # 11:40 UTC
-    - cron: "05 13 * * *"  # 13:05 UTC
-    - cron: "44 14 * * *"  # 14:44 UTC
-    - cron: "35 15 * * *"  # 15:35 UTC
-    - cron: "00 17 * * *"  # 17:00 UTC
-    - cron: "25 19 * * *"  # 19:25 UTC
+    # Läuft 10-mal am Tag zu verschiedenen Zeiten (MEZ = UTC+1)
+    - cron: "10 7 * * *"
+    - cron: "30 8 * * *"
+    - cron: "50 9 * * *"
+    - cron: "15 11 * * *"
+    - cron: "40 12 * * *"
+    - cron: "05 14 * * *"
+    - cron: "20 15 * * *"
+    - cron: "35 16 * * *"
+    - cron: "00 18 * * *"
+    - cron: "25 20 * * *"
 
 jobs:
   commit:
@@ -33,16 +33,19 @@ jobs:
           exit 0
         fi
 
-    # 3. Ändere die README.md-Datei (aktualisiere die letzte Zeile)
+    # 3. Ändere die README.md-Datei (aktualisiere die letzte Zeile auf MEZ-Zeit)
     - name: Update last line of README file
       run: |
+        # Setze die Zeitzone auf MEZ (Europe/Berlin)
+        export TZ="Europe/Berlin"
+        
         # Speichere den aktuellen Inhalt der README.md in einer temporären Datei
         temp_file=$(mktemp)
         
         # Entferne die letzte Zeile aus der README.md und speichere den Rest in der temporären Datei
         head -n -1 README.md > "$temp_file"
         
-        # Füge die aktualisierte Zeile hinzu
+        # Füge die aktualisierte Zeile mit dem MEZ-Datum hinzu
         echo "###### Letztes Update: $(date)" >> "$temp_file"
         
         # Ersetze die README.md mit dem neuen Inhalt
