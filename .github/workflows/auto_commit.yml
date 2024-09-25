@@ -4,7 +4,7 @@ name: Daily Commit
 # Festlegen des Zeitplans für die tägliche Ausführung um 12:00 UTC
 on:
   schedule:
-    - cron: "0 12 * * *"
+    - cron: "45 10 * * *"
 
 jobs:
   commit:
