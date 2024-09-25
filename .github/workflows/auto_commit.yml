@@ -25,7 +25,7 @@ jobs:
         head -n -1 README.md > "$temp_file"
         
         # Füge die aktualisierte Zeile hinzu
-        echo "<p style="color:green">Letztes Update: $(date)" >> "$temp_file</p>"
+        echo "<p color:"green">Letztes Update: *$(date)*</p>" >> "$temp_file"
         
         # Ersetze die README.md mit dem neuen Inhalt
         mv "$temp_file" README.md
