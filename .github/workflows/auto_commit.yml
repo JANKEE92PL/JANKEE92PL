@@ -1,10 +1,15 @@
 # .github/workflows/auto_commit.yml
-name: Daily Commit
+name: Random Daily Commit
 
-# Festlegen des Zeitplans für die tägliche Ausführung um 10:45 MEZ (9:45 UTC)
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    # Läuft 6-mal am Tag zu festen Zeiten
+    - cron: "15 8 * * *"  # 08:15 UTC
+    - cron: "30 12 * * *"  # 12:30 UTC
+    - cron: "00 14 * * *"  # 14:00 UTC
+    - cron: "10 14 * * *"  # 16:45 UTC
+    - cron: "00 18 * * *"  # 18:00 UTC
+    - cron: "30 21 * * *"  # 21:30 UTC
 
 jobs:
   commit:
@@ -15,7 +20,16 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    # 2. Ändere die README.md-Datei (aktualisiere die letzte Zeile)
+    # 2. Zufallsentscheidung, ob ein Commit durchgeführt wird
+    - name: Decide randomly to commit or not
+      run: |
+        # Generiere eine zufällige Zahl zwischen 0 und 1
+        if [ $((RANDOM % 2)) -eq 0 ]; then
+          echo "Skipping this run."
+          exit 0
+        fi
+
+    # 3. Ändere die README.md-Datei (aktualisiere die letzte Zeile)
     - name: Update last line of README file
       run: |
         # Speichere den aktuellen Inhalt der README.md in einer temporären Datei
@@ -30,22 +44,12 @@ jobs:
         # Ersetze die README.md mit dem neuen Inhalt
         mv "$temp_file" README.md
 
-    # 3. Committe Änderungen (ohne Push)
-    - name: Stage and commit changes
+    # 4. Committe und pushe Änderungen
+    - name: Commit and push changes
       run: |
         git config --global user.name "JANKEE92PL"
         git config --global user.email "jankee112@googlemail.com"
-        
-        # Stage and commit the changes
         git add README.md
         git commit -m "Automatisches Update am $(date)"
-
-    # 4. Führe Pull mit Rebase durch, um Änderungen aus dem Remote zu holen
-    - name: Pull latest changes
-      run: |
         git pull --rebase
-
-    # 5. Push die Änderungen ins Remote-Repository
-    - name: Push changes
-      run: |
         git push
