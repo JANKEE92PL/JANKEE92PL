@@ -9,7 +9,7 @@ on:
     - cron: "00 14 * * *"  # 14:00 UTC
     - cron: "10 14 * * *"  # 16:45 UTC
     - cron: "00 18 * * *"  # 18:00 UTC
-    - cron: "30 21 * * *"  # 21:30 UTC
+    - cron: "30 19 * * *"  # 19:30 UTC
 
 jobs:
   commit:
