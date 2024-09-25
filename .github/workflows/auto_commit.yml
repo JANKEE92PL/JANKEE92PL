@@ -1,10 +1,9 @@
 # .github/workflows/auto_commit.yml
 name: Daily Commit
 
-# Festlegen des Zeitplans für die tägliche Ausführung um 12:00 UTC
 on:
   schedule:
-    - cron: "48 09 * * *"
+    - cron: "50 09 * * *"
 
 jobs:
   commit:
