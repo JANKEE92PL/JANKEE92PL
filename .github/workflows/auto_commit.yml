@@ -1,7 +1,7 @@
 # .github/workflows/auto_commit.yml
 name: Daily Commit
 
-# Festlegen des Zeitplans für die tägliche Ausführung um 12:00 UTC (je nach Zeitzone anpassen)
+# Festlegen des Zeitplans für die tägliche Ausführung um 12:00 UTC
 on:
   schedule:
     - cron: "0 12 * * *"
@@ -17,7 +17,8 @@ jobs:
 
     # 2. Ändere die README.md-Datei (Datum hinzufügen)
     - name: Update README file
-      run: echo "Letztes Update: $(date)" >> README.md
+      run: |
+        echo "Letztes Update: $(date)" >> README.md
 
     # 3. Änderungen committen und pushen
     - name: Commit and push changes
