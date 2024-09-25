@@ -3,13 +3,17 @@ name: Random Daily Commit
 
 on:
   schedule:
-    # Läuft 6-mal am Tag zu festen Zeiten
-    - cron: "15 8 * * *"  # 08:15 UTC
-    - cron: "30 12 * * *"  # 12:30 UTC
-    - cron: "20 14 * * *"  # 14:20 UTC
-    - cron: "10 16 * * *"  # 16:10 UTC
-    - cron: "00 18 * * *"  # 18:00 UTC
-    - cron: "30 19 * * *"  # 19:30 UTC
+    # Läuft 10-mal am Tag zu verschiedenen Zeiten (UTC)
+    - cron: "10 6 * * *"   # 06:10 UTC
+    - cron: "30 7 * * *"   # 07:30 UTC
+    - cron: "50 8 * * *"   # 08:50 UTC
+    - cron: "15 10 * * *"  # 10:15 UTC
+    - cron: "40 11 * * *"  # 11:40 UTC
+    - cron: "05 13 * * *"  # 13:05 UTC
+    - cron: "44 14 * * *"  # 14:44 UTC
+    - cron: "35 15 * * *"  # 15:35 UTC
+    - cron: "00 17 * * *"  # 17:00 UTC
+    - cron: "25 19 * * *"  # 19:25 UTC
 
 jobs:
   commit:
