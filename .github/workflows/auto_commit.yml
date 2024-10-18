@@ -21,43 +21,20 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    # 2. Zufallsentscheidung, ob ein Commit durchgeführt wird
+    # 2. Zufallsentscheidung, ob ein Commit durchgeführt wird (Zufallsbedingung verschärft)
     - name: Decide randomly to commit or not
       run: |
-        # Generiere eine zufällige Zahl zwischen 0 und 1
-        if [ $((RANDOM % 2)) -eq 0 ]; then
+        # Erhöhe die Wahrscheinlichkeit des Abbruchs, z.B. nur 1 von 4 Läufen soll einen Commit ausführen
+        if [ $((RANDOM % 4)) -ne 0 ]; then
           echo "Skipping this run."
           exit 0
         fi
 
-    # 3. Ändere die README.md-Datei (aktualisiere die letzte Zeile mit der Zeitdifferenz)
+    # 3. Ändere die README.md-Datei (aktualisiere die letzte Zeile mit Datum und Uhrzeit im Format DDMM hh:mm)
     - name: Update last line of README file
       run: |
         # Setze die Zeitzone auf MEZ (Europe/Berlin)
         export TZ="Europe/Berlin"
-
-        # Hole das Datum des letzten Commits
-        last_commit_time=$(git log -1 --format=%cd --date=unix)
-        
-        # Aktuelle Zeit in Unix-Timestamp
-        current_time=$(date +%s)
-        
-        # Berechne die Zeitdifferenz in Sekunden
-        time_diff=$((current_time - last_commit_time))
-        
-        # Berechne die Zeitdifferenz in Minuten, Stunden und Tagen
-        minutes=$((time_diff / 60))
-        hours=$((minutes / 60))
-        days=$((hours / 24))
-
-        # Bereite die Zeitdifferenz für die Ausgabe vor
-        if [ $days -gt 0 ]; then
-          time_ago="$days Tagen"
-        elif [ $hours -gt 0 ]; then
-          time_ago="$hours Stunden"
-        else
-          time_ago="$minutes Minuten"
-        fi
 
         # Speichere den aktuellen Inhalt der README.md in einer temporären Datei
         temp_file=$(mktemp)
@@ -65,8 +42,8 @@ jobs:
         # Entferne die letzte Zeile aus der README.md und speichere den Rest in der temporären Datei
         head -n -1 README.md > "$temp_file"
         
-        # Füge die aktualisierte Zeile mit der Zeitdifferenz hinzu
-        echo "###### Letztes Update vor $time_ago" >> "$temp_file"
+        # Füge das Datum und die Uhrzeit im Format DDMM hh:mm hinzu
+        echo "###### Letztes Update: $(date +'%d%m %H:%M')" >> "$temp_file"
         
         # Ersetze die README.md mit dem neuen Inhalt
         mv "$temp_file" README.md
@@ -77,6 +54,6 @@ jobs:
         git config --global user.name "JANKEE92PL"
         git config --global user.email "jankee112@googlemail.com"
         git add README.md
-        git commit -m "Automatisches Update am $(date)"
+        git commit -m "Automatisches Update am $(date +'%d%m %H:%M')"
         git pull --rebase
         git push
