@@ -21,11 +21,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    # 2. Zufallsentscheidung, ob ein Commit durchgeführt wird (Zufallsbedingung verschärft)
+    # 2. Zufallsentscheidung, ob ein Commit durchgeführt wird (Wahrscheinlichkeit 2 von 3)
     - name: Decide randomly to commit or not
       run: |
-        # Erhöhe die Wahrscheinlichkeit des Abbruchs, z.B. nur 1 von 4 Läufen soll einen Commit ausführen
-        if [ $((RANDOM % 4)) -ne 0 ]; then
+        # Erhöhe die Wahrscheinlichkeit des Abbruchs, z.B. nur 1 von 3 Läufen wird abgebrochen
+        if [ $((RANDOM % 3)) -ne 0 ]; then
           echo "Skipping this run."
           exit 0
         fi
