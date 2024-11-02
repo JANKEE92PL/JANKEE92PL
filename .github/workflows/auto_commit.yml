@@ -28,7 +28,7 @@ jobs:
     - name: Decide randomly to commit or not
       run: |
         # Setze die Wahrscheinlichkeit auf 25% (nur 1 von 4 Läufen wird einen Commit durchführen)
-        if [ $((RANDOM % 4)) -ne 0 ]; then
+        if [ $((RANDOM % 5)) -ne 0 ]; then
           echo "Skipping this run."
           exit 0
         fi
