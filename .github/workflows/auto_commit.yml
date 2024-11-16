@@ -24,12 +24,15 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    # 2. Zufallsentscheidung, ob ein Commit durchgeführt wird (Wahrscheinlichkeit 25%)
+    # 2. Zufallsentscheidung, ob ein Commit durchgeführt wird (Wahrscheinlichkeit 10-20%)
     - name: Decide randomly to commit or not
       run: |
-        # Setze die Wahrscheinlichkeit auf 20% (nur 1 von 5 Läufen wird einen Commit durchführen)
-        if [ $((RANDOM % 5)) -ne 0 ]; then
-          echo "Skipping this run."
+        # Generiere eine Zufallszahl zwischen 1 und 10
+        random_value=$((RANDOM % 10 + 1))
+
+        # Nur Commit, wenn die Zahl 1 oder 2 ist (20% Wahrscheinlichkeit)
+        if [ $random_value -gt 2 ]; then
+          echo "Skipping this run (Random Value: $random_value)."
           exit 0
         fi
 
