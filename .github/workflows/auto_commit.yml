@@ -3,9 +3,7 @@ name: Random Daily Commit
 
 on:
   schedule:
-    # Läuft 3-mal am Tag zu verschiedenen Zeiten (MEZ = UTC+1)
-    - cron: "20 7 * * *"
-    - cron: "35 8 * * *"
+    # Läuft 1-mal am Tag zu verschiedenen Zeiten (MEZ = UTC+1)
     - cron: "50 9 * * *"
 
 jobs:
